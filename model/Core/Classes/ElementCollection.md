@@ -10,6 +10,9 @@ A collection of Elements, not necessarily with unifying context.
 
 An Element Collection is a collection of Elements, not necessarily with unifying context.
 
+Note that all ElementCollections must conform to the core profile even if the core profile is no specified in the profileConformance property.
+If the profileConformance property is not provided, core is to be assumed as the default.
+
 ## Metadata
 
 - name: ElementCollection
@@ -26,4 +29,5 @@ An Element Collection is a collection of Elements, not necessarily with unifying
   - minCount: 1
 - imports
   - type: ExternalMap
-
+- profileConformance
+  - type: ProfileIdentifierType
