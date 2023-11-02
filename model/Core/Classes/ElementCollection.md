@@ -22,10 +22,10 @@ If the profileConformance property is not provided, core is to be assumed as the
 ## Properties
 
 - element
-  - type: Element except NOT (X-Collection) (NOTE: the spec generator still needs to define the official syntax and generation algorithm for the "except NOT (X-Collection)" portion here)
+  - type: Element except NOT (SpdxDocument) (NOTE: the spec generator still needs to define the official syntax and generation algorithm for the "except NOT (SpdxDocument)" portion here)
   - minCount: 1
 - rootElement
-  - type: Element except NOT (X-Collection) (NOTE: the spec generator still needs to define the official syntax and generation algorithm for the "except NOT (X-Collection)" portion here)
+  - type: Element except NOT (SpdxDocument) (NOTE: the spec generator still needs to define the official syntax and generation algorithm for the "except NOT (SpdxDocument)" portion here)
   - minCount: 1
 - profileConformance
   - type: ProfileIdentifierType
