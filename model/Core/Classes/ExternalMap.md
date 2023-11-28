@@ -21,7 +21,7 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 
 ## Properties
 
-- externalId
+- externalSpdxId
   - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
@@ -30,6 +30,6 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 - locationHint
   - type: xsd:anyURI
   - maxCount: 1
-- definingArtifact
+- definingDocument
   - type: Artifact
   - maxCount: 1

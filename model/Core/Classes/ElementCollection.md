@@ -13,6 +13,13 @@ An Element Collection is a collection of Elements, not necessarily with unifying
 Note that all ElementCollections must conform to the core profile even if the core profile is no specified in the profileConformance property.
 If the profileConformance property is not provided, core is to be assumed as the default.
 
+**Constraints**
+If the ElementCollection has at least 1 element, it must also have at least 1 rootElement.
+
+The element must not be of type SpdxDocument.
+
+The rootElement must not be of type SpdxDocument.
+
 ## Metadata
 
 - name: ElementCollection
@@ -22,10 +29,12 @@ If the profileConformance property is not provided, core is to be assumed as the
 ## Properties
 
 - element
-  - type: Element except NOT (SpdxDocument) (NOTE: the spec generator still needs to define the official syntax and generation algorithm for the "except NOT (SpdxDocument)" portion here)
-  - minCount: 1
+  - type: Element
+  - minCount: 0
 - rootElement
-  - type: Element except NOT (SpdxDocument) (NOTE: the spec generator still needs to define the official syntax and generation algorithm for the "except NOT (SpdxDocument)" portion here)
-  - minCount: 1
+  - type: Element
+  - minCount: 0
+- imports
+  - type: ExternalMap
 - profileConformance
   - type: ProfileIdentifierType
